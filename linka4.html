@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EcoTracker | Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ================= CSS ================= -->
+    <style>
+      :root {
+        --primary: #5b9944;
+        --bg: #f4f6f4;
+        --card: #ffffff;
+        --text: #2e2e2e;
+        --danger: #d9534f;
+      }
+
+      * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", Arial, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      /* Header */
+      .header {
+        background: var(--primary);
+        color: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 0 0 18px 18px;
+      }
+
+      .header h2 {
+        margin: 0;
+      }
+
+      .header p {
+        opacity: 0.9;
+        margin-top: 5px;
+      }
+
+      /* Profile Card */
+      .profile-card {
+        background: var(--card);
+        margin: 20px;
+        padding: 25px;
+        border-radius: 16px;
+        text-align: center;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+      }
+
+      .avatar {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+
+      .email {
+        font-size: 14px;
+        color: #777;
+      }
+
+      .eco-score {
+        margin-top: 15px;
+        background: #eaf4e7;
+        padding: 12px;
+        border-radius: 12px;
+        font-weight: bold;
+        color: var(--primary);
+      }
+
+      .eco-score strong {
+        font-size: 26px;
+        display: block;
+      }
+
+      /* Stats */
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin: 0 20px;
+      }
+
+      .stat-box {
+        background: var(--card);
+        padding: 15px;
+        border-radius: 14px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      }
+
+      .stat-box h4 {
+        margin: 0;
+        font-size: 14px;
+        color: var(--primary);
+      }
+
+      .stat-box p {
+        font-size: 18px;
+        margin: 8px 0 0;
+        font-weight: bold;
+      }
+
+      /* Settings */
+      .settings {
+        background: var(--card);
+        margin: 20px;
+        padding: 20px;
+        border-radius: 16px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      }
+
+      .settings h3 {
+        margin-top: 0;
+      }
+
+      .settings button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        background: var(--primary);
+        color: white;
+      }
+
+      .settings button.danger {
+        background: var(--danger);
+      }
+
+      /* Bottom Navigation */
+      .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background: white;
+        border-top: 1px solid #ddd;
+        padding: 12px 0;
+      }
+
+      .bottom-nav a {
+        text-decoration: none;
+        color: #777;
+        font-weight: bold;
+      }
+
+      .bottom-nav a.active {
+        color: var(--primary);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <h2>Profile</h2>
+      <p>Your eco journey summary</p>
+    </div>
+
+    <!-- Profile -->
+    <div class="profile-card">
+      <img class="avatar" src="https://i.imgur.com/6VBx3io.png" />
+      <h3 id="username">Yahya Cherkani</h3>
+      <p class="email" id="email">yahya@ecotracker.com</p>
+
+      <div class="eco-score">
+        EcoScore
+        <strong id="ecoScore">82</strong>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat-box">
+        <h4>🌱 Actions</h4>
+        <p id="actions">124</p>
+      </div>
+      <div class="stat-box">
+        <h4>♻ Recycled</h4>
+        <p id="recycled">18 kg</p>
+      </div>
+      <div class="stat-box">
+        <h4>🏆 Badges</h4>
+        <p id="badges">6</p>
+      </div>
+    </div>
+
+    <!-- Settings -->
+    <div class="settings">
+      <h3>Account Settings</h3>
+      <button onclick="editProfile()">Edit Profile</button>
+      <button class="danger" onclick="logout()">Logout</button>
+    </div>
+
+    <!-- Bottom Nav -->
+    <div class="bottom-nav">
+      <a href="linka.html">Home</a>
+      <a href="linka2.html">Scan</a>
+      <a href="linka3.html">Goals</a>
+      <a href="linka4.html" class="active">Profile</a>
+    </div>
+
+    <!-- ================= JS ================= -->
+    <script>
+      function editProfile() {
+        const name = prompt("Enter your name:");
+        const email = prompt("Enter your email:");
+
+        if (name) document.getElementById("username").innerText = name;
+        if (email) document.getElementById("email").innerText = email;
+      }
+
+      function logout() {
+        alert("You have been logged out.");
+        window.location.href = "linka4.html";
+      }
+    </script>
+  </body>
+</html>

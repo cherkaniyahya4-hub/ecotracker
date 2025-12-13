@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoTracker | Scan</title>
+
+    <style>
+      :root {
+        --primary: #5b9944;
+        --secondary: #7bc96f;
+        --bg: #f7f6f0;
+        --card: #ffffff;
+        --text-dark: #333;
+        --text-light: #777;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text-dark);
+      }
+
+      /* ---------- HEADER ---------- */
+      .header {
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        padding: 22px 20px;
+        color: white;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+      }
+
+      .header h1 {
+        margin: 0;
+        font-size: 22px;
+      }
+
+      .header p {
+        margin-top: 6px;
+        font-size: 14px;
+        opacity: 0.9;
+      }
+
+      /* ---------- MAIN ---------- */
+      .main {
+        padding: 20px;
+        padding-bottom: 90px;
+      }
+
+      /* ---------- SCAN CARD ---------- */
+      .scan-card {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        margin-top: -30px;
+      }
+
+      .scan-icon {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background: rgba(91, 153, 68, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        color: var(--primary);
+        margin: auto;
+      }
+
+      .scan-card h2 {
+        margin-top: 16px;
+        margin-bottom: 8px;
+      }
+
+      .scan-card p {
+        color: var(--text-light);
+        font-size: 14px;
+      }
+
+      /* ---------- BUTTON ---------- */
+      .scan-btn {
+        margin-top: 20px;
+        padding: 14px;
+        width: 100%;
+        border: none;
+        border-radius: 14px;
+        background: var(--primary);
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .scan-btn:hover {
+        background: #4a8539;
+      }
+
+      /* ---------- INFO ---------- */
+      .info {
+        margin-top: 20px;
+        font-size: 13px;
+        color: var(--text-light);
+      }
+
+      /* ---------- NAVBAR ---------- */
+      .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: white;
+        display: flex;
+        justify-content: space-around;
+        padding: 12px 0;
+        box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: var(--text-light);
+        font-size: 13px;
+        text-align: center;
+      }
+
+      .navbar a.active {
+        color: var(--primary);
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <h1>Scan Waste</h1>
+      <p>Identify waste and get eco-friendly advice</p>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+      <div class="scan-card">
+        <div class="scan-icon">📷</div>
+
+        <h2>Scan Your Waste</h2>
+        <p>Use your camera to recognize waste and receive recycling tips.</p>
+
+        <button class="scan-btn" onclick="startScan()">Start Scan</button>
+
+        <div class="info">Camera & AI features coming soon 🌱</div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a href="linka.html">Home</a>
+      <a href="linka2.html" class="active">Scan</a>
+      <a href="linka3.html">Goals</a>
+      <a href="#">Profile</a>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+      function startScan() {
+        alert("📷 Camera scanning feature coming soon!");
+      }
+    </script>
+  </body>
+</html>

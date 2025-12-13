@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoTracker Dashboard</title>
+
+    <style>
+      :root {
+        --primary: #5b9944;
+        --secondary: #7bc96f;
+        --bg: #f7f6f0;
+        --card: #ffffff;
+        --text-dark: #333;
+        --text-light: #777;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background-color: var(--bg);
+        color: var(--text-dark);
+      }
+
+      /* ---------- HEADER ---------- */
+      .header {
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        padding: 24px 20px;
+        color: white;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+      }
+
+      .header h1 {
+        margin: 0;
+        font-size: 22px;
+      }
+
+      .header p {
+        margin-top: 6px;
+        font-size: 14px;
+        opacity: 0.9;
+      }
+
+      /* ---------- MAIN ---------- */
+      .main {
+        padding: 20px;
+        padding-bottom: 90px;
+      }
+
+      /* ---------- ECOSCORE ---------- */
+      .ecoscore-card {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        margin-top: -40px;
+      }
+
+      .ecoscore-title {
+        font-size: 14px;
+        color: var(--text-light);
+      }
+
+      .ecoscore-value {
+        font-size: 48px;
+        font-weight: bold;
+        color: var(--primary);
+      }
+
+      .ecoscore-desc {
+        font-size: 14px;
+        color: var(--text-light);
+      }
+
+      /* ---------- FEATURES GRID ---------- */
+      .features {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+
+      .feature-card {
+        background: var(--card);
+        border-radius: 16px;
+        padding: 18px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-4px);
+      }
+
+      .feature-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        background: rgba(91, 153, 68, 0.15);
+        color: var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+      }
+
+      .feature-title {
+        margin-top: 14px;
+        font-weight: 600;
+      }
+
+      .feature-desc {
+        font-size: 13px;
+        color: var(--text-light);
+        margin-top: 4px;
+      }
+
+      /* ---------- BOTTOM NAV ---------- */
+      .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: white;
+        display: flex;
+        justify-content: space-around;
+        padding: 12px 0;
+        box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: var(--text-light);
+        font-size: 13px;
+        text-align: center;
+      }
+
+      .navbar a.active {
+        color: var(--primary);
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <h1>EcoTracker</h1>
+      <p>Smart sustainable lifestyle tracking</p>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+      <!-- ECOSCORE -->
+      <div class="ecoscore-card">
+        <div class="ecoscore-title">Your EcoScore</div>
+        <div class="ecoscore-value">82</div>
+        <div class="ecoscore-desc">
+          Based on your habits and activities this week
+        </div>
+      </div>
+
+      <!-- FEATURES -->
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-icon">🧠</div>
+          <div class="feature-title">AI Habit Tracking</div>
+          <div class="feature-desc">
+            Analyze daily actions and improve sustainability.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📷</div>
+          <div class="feature-title">Waste Recognition</div>
+          <div class="feature-desc">
+            Scan waste using your camera for eco advice.
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <div class="feature-title">Weekly Eco Goals</div>
+          <div class="feature-desc">Set achievable goals every week.</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎮</div>
+          <div class="feature-title">Gamified Tasks</div>
+          <div class="feature-desc">
+            Earn points and badges for green actions.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a href="linka2.html" class="active">Home</a>
+      <a href="linka2.html">Scan</a>
+      <a href="linka3.html">Goals</a>
+      <a href="linka4.html">Profile</a>
+    </div>
+  </body>
+</html>
