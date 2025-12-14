@@ -31,6 +31,18 @@
         <a class="action-button" href="#scan-history">View history</a>
       </div>
 
+      <section class="card">
+        <h2>Live camera scan</h2>
+        <p>Visual mockup of the in-app scanner for user guidance.</p>
+        <div class="camera-mock">
+          <div class="camera-icon">📷</div>
+          <p style="text-align: center; color: var(--text-muted); max-width: 260px;">
+            Point your camera at waste or products to let EcoTracker analyze them in real time.
+          </p>
+          <button type="button">Camera ready</button>
+        </div>
+      </section>
+
       <section class="card" id="ai-scan">
         <h2>AI waste scanning</h2>
         <p>
@@ -60,14 +72,24 @@
         </ul>
       </section>
 
-      <section class="card list-section" id="scan-history">
+      <section class="card history-card" id="scan-history">
         <h2>Latest activity</h2>
-        <ul class="list">
-          <li>Yesterday &middot; Plastic tray -> rinse & recycle bin.</li>
-          <li>Yesterday &middot; Coffee grounds -> compost pickup scheduled.</li>
-          <li>2 days ago &middot; Aluminum cans -> logged for bonus streak.</li>
-          <li>2 days ago &middot; Cleaner barcode -> refill station recommended.</li>
-        </ul>
+        <div class="history-entry">
+          <strong>Yesterday</strong>
+          <p>Plastic tray &middot; rinse & recycle bin.</p>
+        </div>
+        <div class="history-entry">
+          <strong>Yesterday</strong>
+          <p>Coffee grounds &middot; compost pickup scheduled.</p>
+        </div>
+        <div class="history-entry">
+          <strong>2 days ago</strong>
+          <p>Aluminum cans &middot; logged for bonus streak.</p>
+        </div>
+        <div class="history-entry">
+          <strong>2 days ago</strong>
+          <p>Cleaner barcode &middot; refill station recommended.</p>
+        </div>
       </section>
 
       <section class="insight-grid">
@@ -95,6 +117,7 @@
       <a href="goals.html">Goals</a>
       <a href="profile.html">Profile</a>
     </nav>
+    <script src="../assets/js/app.js"></script>
     <script src="../assets/js/theme.js"></script>
   </body>
 </html>

@@ -42,7 +42,7 @@
 
       <section class="card edit-card" id="edit-profile">
         <h2>Edit profile</h2>
-        <form>
+        <form class="profile-form">
           <div>
             <label for="name">Full name</label>
             <input id="name" name="name" type="text" value="Yahya A." />
@@ -64,8 +64,11 @@
             <label for="goal">Primary eco-goal</label>
             <input id="goal" name="goal" type="text" value="Low-waste kitchen" />
           </div>
-          <button type="button" class="primary-btn">Save changes</button>
+          <button type="submit" class="primary-btn">Save changes</button>
         </form>
+        <div class="alert success" id="profile-alert" hidden>
+          Profile updated successfully!
+        </div>
       </section>
 
       <section class="grid">
@@ -110,6 +113,7 @@
       <a href="goals.html">Goals</a>
       <a href="profile.html" class="active">Profile</a>
     </nav>
+    <script src="../assets/js/app.js"></script>
     <script src="../assets/js/theme.js"></script>
   </body>
 </html>

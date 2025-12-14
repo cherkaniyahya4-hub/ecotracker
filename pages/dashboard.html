@@ -88,6 +88,7 @@
         <a class="action-button" href="scan.html">Open scanners</a>
       </div>
 
+
       <section class="grid">
         <article class="tile">
           <h3>AI habit tracking</h3>
@@ -109,12 +110,36 @@
 
       <section class="card">
         <h2>Today's focus</h2>
-        <ul class="list">
-          <li>Bike or walk for at least 40 minutes.</li>
-          <li>Drop e-waste using the GPS recycling finder.</li>
+        <ul class="task-list" data-task-list="dashboard">
           <li>
-            Scan two pantry products to check their carbon footprint and get
-            swap advice.
+            <label>
+              <input
+                type="checkbox"
+                class="task-checkbox"
+                data-task-id="dash-commute"
+              />
+              <span>Bike or walk for at least 40 minutes.</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input
+                type="checkbox"
+                class="task-checkbox"
+                data-task-id="dash-ewaste"
+              />
+              <span>Drop e-waste using the GPS recycling finder.</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input
+                type="checkbox"
+                class="task-checkbox"
+                data-task-id="dash-scan"
+              />
+              <span>Scan two pantry products to get swap advice.</span>
+            </label>
           </li>
         </ul>
       </section>
@@ -154,6 +179,7 @@
       <a href="goals.html">Goals</a>
       <a href="profile.html">Profile</a>
     </nav>
+    <script src="../assets/js/app.js"></script>
     <script src="../assets/js/theme.js"></script>
   </body>
 </html>
