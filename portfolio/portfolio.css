@@ -768,11 +768,8 @@ body {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
-
 .contact-box i {
-  font-size: 22px;
-  margin-bottom: 10px;
-  color: #ff4b4b;
+  font-size: 26px;
 }
 
 .contact-box h3 {
@@ -870,4 +867,118 @@ body {
 .marg {
   margin-top: -190px;
   margin-left: 40rem;
+}
+/* =================== CONTACT SECTION =================== */
+.contact-section {
+  min-height: 100vh;
+  padding: 110px 60px;
+  background: #2f2f2f;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.contact-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #dcdcdc;
+}
+
+.contact-subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Contact cards */
+.contact-box {
+  padding: 22px 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  text-decoration: none;
+  color: white;
+  transition: 0.25s ease;
+}
+
+.contact-link:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+/* Icons size */
+.contact-link i {
+  font-size: 26px;
+}
+
+/* Official colors */
+.email-icon {
+  color: #ea4335; /* Gmail red */
+}
+
+.linkedin-icon {
+  color: #0a66c2;
+}
+
+.github-icon {
+  color: #ffffff;
+}
+
+.whatsapp-icon {
+  color: #25d366;
+}
+
+/* Text */
+.contact-box h3 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.contact-box p {
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== OFFICIAL BRAND COLORS ===== */
+
+.linkedin-icon {
+  color: #0a66c2;
+}
+
+.github-icon {
+  color: #ffffff;
+}
+
+.whatsapp-icon {
+  color: #25d366;
+}
+.email-icon {
+  color: #ffffff;
 }
