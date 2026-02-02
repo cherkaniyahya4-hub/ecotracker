@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>EcoTracker &middot; Goals</title>
-    <link rel="stylesheet" href="../assets/css/app.css" />
+    <link rel="stylesheet" href="./app.css" />
   </head>
   <body>
     <header>
@@ -17,7 +17,7 @@
         >
           Dark mode
         </button>
-        <a class="logout-link" href="login.html">Log out</a>
+        <a class="logout-link" href="./login.html">Log out</a>
       </div>
       <p>Weekly rhythm</p>
       <h1>Keep eco-goals achievable and gamified.</h1>
@@ -37,7 +37,9 @@
           <button class="filter-btn active" data-filter="all">All</button>
           <button class="filter-btn" data-filter="transport">Transport</button>
           <button class="filter-btn" data-filter="energy">Energy</button>
-          <button class="filter-btn" data-filter="consumption">Consumption</button>
+          <button class="filter-btn" data-filter="consumption">
+            Consumption
+          </button>
         </div>
         <ul class="progress-list">
           <li class="progress-item" data-category="transport">
@@ -103,7 +105,10 @@
                 class="task-checkbox"
                 data-task-id="goal-share"
               />
-              <span>Share your streak recap to the team sustainability channel.</span>
+              <span
+                >Share your streak recap to the team sustainability
+                channel.</span
+              >
             </label>
           </li>
         </ul>
@@ -122,12 +127,12 @@
     </main>
 
     <nav class="navbar">
-      <a href="dashboard.html">Home</a>
-      <a href="scan.html">Scan</a>
-      <a href="goals.html" class="active">Goals</a>
-      <a href="profile.html">Profile</a>
+      <a href="./dashboard.html">Home</a>
+      <a href="./scan.html">Scan</a>
+      <a href="./goals.html" class="active">Goals</a>
+      <a href="./profile.html">Profile</a>
     </nav>
-    <script src="../assets/js/app.js"></script>
-    <script src="../assets/js/theme.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/theme.js"></script>
   </body>
 </html>

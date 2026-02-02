@@ -1,0 +1,19 @@
+.mon-conteneur-flex {
+  display: flex; /* On active le mode flexible */
+
+  /* On aligne les éléments sur la ligne principale (horizontale) */
+  justify-content: space-between;
+
+  /* On permet aux blocs de passer à la ligne s'il n'y a plus de place */
+  flex-wrap: wrap;
+
+  gap: 15px; /* L'écartement fonctionne aussi en Flexbox ! */
+}
+
+.bloc {
+  flex: 1; /* Chaque bloc va essayer de prendre la même place */
+  min-width: 100px; /* Mais ils ne feront pas moins de 100px */
+  background-color: lightcoral;
+  padding: 20px;
+  border: 1px solid red;
+}

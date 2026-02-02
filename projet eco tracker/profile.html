@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>EcoTracker &middot; Profile</title>
-    <link rel="stylesheet" href="../assets/css/app.css" />
+    <link rel="stylesheet" href="./app.css" />
   </head>
   <body>
     <header>
@@ -17,7 +17,7 @@
         >
           Dark mode
         </button>
-        <a class="logout-link" href="login.html">Log out</a>
+        <a class="logout-link" href="./login.html">Log out</a>
       </div>
       <p>Your plan</p>
       <h1>Eco profile & community impact</h1>
@@ -26,7 +26,9 @@
 
     <main class="page">
       <div class="quick-actions">
-        <a class="action-button primary" href="#personal-profile">Share EcoScore</a>
+        <a class="action-button primary" href="#personal-profile"
+          >Share EcoScore</a
+        >
         <a class="action-button" href="#edit-profile">Manage devices</a>
         <a class="action-button" href="#account-controls">View rewards</a>
       </div>
@@ -62,7 +64,12 @@
           </div>
           <div>
             <label for="goal">Primary eco-goal</label>
-            <input id="goal" name="goal" type="text" value="Low-waste kitchen" />
+            <input
+              id="goal"
+              name="goal"
+              type="text"
+              value="Low-waste kitchen"
+            />
           </div>
           <button type="submit" class="primary-btn">Save changes</button>
         </form>
@@ -74,7 +81,9 @@
       <section class="grid">
         <article class="tile">
           <h3>Connected accounts</h3>
-          <p>Energy dashboard &middot; Smart thermostat &middot; City bike share.</p>
+          <p>
+            Energy dashboard &middot; Smart thermostat &middot; City bike share.
+          </p>
         </article>
         <article class="tile">
           <h3>Community rank</h3>
@@ -108,12 +117,12 @@
     </main>
 
     <nav class="navbar">
-      <a href="dashboard.html">Home</a>
-      <a href="scan.html">Scan</a>
-      <a href="goals.html">Goals</a>
-      <a href="profile.html" class="active">Profile</a>
+      <a href="./dashboard.html">Home</a>
+      <a href="./scan.html">Scan</a>
+      <a href="./goals.html">Goals</a>
+      <a href="./profile.html" class="active">Profile</a>
     </nav>
-    <script src="../assets/js/app.js"></script>
-    <script src="../assets/js/theme.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/theme.js"></script>
   </body>
 </html>

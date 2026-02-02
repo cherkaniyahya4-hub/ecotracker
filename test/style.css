@@ -1,0 +1,26 @@
+.labelclass {
+  text-align: center;
+  font-size: 90px;
+  margin-left: 46rem;
+  display: flex;
+  margin-top: 55px;
+  font-family: verdana;
+}
+
+#container {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+.b {
+  cursor: pointer;
+  background-color: #3498db;
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+.b:hover {
+  background-color: #2980b9;
+}

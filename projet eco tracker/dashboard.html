@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>EcoTracker &middot; Dashboard</title>
-    <link rel="stylesheet" href="../assets/css/app.css" />
+    <link rel="stylesheet" href="./app.css" />
   </head>
   <body>
     <header>
@@ -17,7 +17,7 @@
         >
           Dark mode
         </button>
-        <a class="logout-link" href="login.html">Log out</a>
+        <a class="logout-link" href="./login.html">Log out</a>
       </div>
       <p>Thursday, 9 January</p>
       <h1>Your EcoScore is balanced this week</h1>
@@ -37,13 +37,41 @@
           <div class="chart">
             <h3>Weekly EcoScore</h3>
             <div class="chart-bars">
-              <span class="chart-bar" data-label="Mon" style="height: 60%"></span>
-              <span class="chart-bar" data-label="Tue" style="height: 72%"></span>
-              <span class="chart-bar" data-label="Wed" style="height: 80%"></span>
-              <span class="chart-bar" data-label="Thu" style="height: 90%"></span>
-              <span class="chart-bar" data-label="Fri" style="height: 86%"></span>
-              <span class="chart-bar" data-label="Sat" style="height: 92%"></span>
-              <span class="chart-bar" data-label="Sun" style="height: 88%"></span>
+              <span
+                class="chart-bar"
+                data-label="Mon"
+                style="height: 60%"
+              ></span>
+              <span
+                class="chart-bar"
+                data-label="Tue"
+                style="height: 72%"
+              ></span>
+              <span
+                class="chart-bar"
+                data-label="Wed"
+                style="height: 80%"
+              ></span>
+              <span
+                class="chart-bar"
+                data-label="Thu"
+                style="height: 90%"
+              ></span>
+              <span
+                class="chart-bar"
+                data-label="Fri"
+                style="height: 86%"
+              ></span>
+              <span
+                class="chart-bar"
+                data-label="Sat"
+                style="height: 92%"
+              ></span>
+              <span
+                class="chart-bar"
+                data-label="Sun"
+                style="height: 88%"
+              ></span>
             </div>
             <p class="chart-line">Streak goal: stay above 80 for 5+ days.</p>
           </div>
@@ -51,14 +79,30 @@
           <div class="chart">
             <h3>Emission sources</h3>
             <div class="chart-bars">
-              <span class="chart-bar" data-label="Mob." style="height: 55%"></span>
-              <span class="chart-bar" data-label="Energy" style="height: 40%"></span>
-              <span class="chart-bar" data-label="Food" style="height: 65%"></span>
-              <span class="chart-bar" data-label="Goods" style="height: 35%"></span>
+              <span
+                class="chart-bar"
+                data-label="Mob."
+                style="height: 55%"
+              ></span>
+              <span
+                class="chart-bar"
+                data-label="Energy"
+                style="height: 40%"
+              ></span>
+              <span
+                class="chart-bar"
+                data-label="Food"
+                style="height: 65%"
+              ></span>
+              <span
+                class="chart-bar"
+                data-label="Goods"
+                style="height: 35%"
+              ></span>
             </div>
             <p class="chart-line">
-              Mobility is the largest share this week - shift 2 trips to transit to
-              rebalance.
+              Mobility is the largest share this week - shift 2 trips to transit
+              to rebalance.
             </p>
           </div>
         </div>
@@ -83,11 +127,12 @@
       </section>
 
       <div class="quick-actions">
-        <a class="action-button primary" href="goals.html#focus-areas">Log eco action</a>
-        <a class="action-button" href="../index.html#map">Plan route</a>
-        <a class="action-button" href="scan.html">Open scanners</a>
+        <a class="action-button primary" href="goals.html#focus-areas"
+          >Log eco action</a
+        >
+        <a class="action-button" href="./index.html#map">Plan route</a>
+        <a class="action-button" href="./scan.html">Open scanners</a>
       </div>
-
 
       <section class="grid">
         <article class="tile">
@@ -149,8 +194,13 @@
         <ul class="list">
           <li>Mobility &middot; 46% low-carbon trips &middot; target 50%.</li>
           <li>Energy &middot; Evening peak trimmed by 9% vs. last week.</li>
-          <li>Waste &middot; 8 scans sorted &middot; 1 contamination flagged.</li>
-          <li>Consumption &middot; 5 barcodes logged &middot; 2 greener swaps adopted.</li>
+          <li>
+            Waste &middot; 8 scans sorted &middot; 1 contamination flagged.
+          </li>
+          <li>
+            Consumption &middot; 5 barcodes logged &middot; 2 greener swaps
+            adopted.
+          </li>
         </ul>
       </section>
 
@@ -174,12 +224,12 @@
     </main>
 
     <nav class="navbar">
-      <a href="dashboard.html" class="active">Home</a>
-      <a href="scan.html">Scan</a>
-      <a href="goals.html">Goals</a>
-      <a href="profile.html">Profile</a>
+      <a href="./dashboard.html" class="active">Home</a>
+      <a href="./scan.html">Scan</a>
+      <a href="./goals.html">Goals</a>
+      <a href="./profile.html">Profile</a>
     </nav>
-    <script src="../assets/js/app.js"></script>
-    <script src="../assets/js/theme.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/theme.js"></script>
   </body>
 </html>
