@@ -41,9 +41,16 @@ body {
   color: var(--text);
   line-height: 1.6;
   font-size: 16px;
-  font-family: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont,
+  font-family:
+    "Inter",
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
     sans-serif;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
 }
 
 img {
@@ -104,7 +111,9 @@ a {
   padding: 12px 20px;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .btn-primary {
@@ -141,11 +150,8 @@ a {
 
 .hero {
   margin-top: 32px;
-  background-image: linear-gradient(
-      135deg,
-      rgba(5, 18, 10, 0.95),
-      rgba(63, 155, 90, 0.8)
-    ),
+  background-image:
+    linear-gradient(135deg, rgba(5, 18, 10, 0.95), rgba(63, 155, 90, 0.8)),
     url("../images/ecotracker_website_background_1.jpg");
   background-size: cover;
   background-position: center;
@@ -400,10 +406,8 @@ a {
 
 .map-highlight {
   margin-top: 32px;
-  background-image: linear-gradient(
-      rgba(5, 12, 9, 0.92),
-      rgba(5, 12, 9, 0.85)
-    ),
+  background-image:
+    linear-gradient(rgba(5, 12, 9, 0.92), rgba(5, 12, 9, 0.85)),
     url("../images/photostudo.jpg");
   background-size: cover;
   background-position: center;
@@ -478,5 +482,127 @@ a {
   *::before,
   *::after {
     transition: none !important;
+  }
+}
+/* --- Navigation Sticky Professionnelle --- */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(
+    247,
+    245,
+    239,
+    0.8
+  ); /* Couleur --bg-base avec transparence */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 15px 24px;
+  margin: 0 -24px; /* Pour compenser le padding de .page si besoin */
+  border-bottom: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .nav {
+  background: rgba(1, 8, 4, 0.8);
+}
+
+/* --- Barre de progression de lecture --- */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: var(--accent);
+  z-index: 1001;
+}
+
+/* --- Partners Strip (Social Proof) --- */
+.partners-strip {
+  text-align: center;
+  padding: 40px 0;
+  opacity: 0.7;
+}
+
+.partners-strip span {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.logo-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  filter: grayscale(1);
+  transition: filter 0.3s ease;
+}
+
+.partner-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-muted);
+}
+
+.logo-grid:hover {
+  filter: grayscale(0);
+}
+
+/* --- Effet d'apparition au scroll (Reveal) --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Amélioration des cartes (Hover 3D) --- */
+.card,
+.pillar-card,
+.scan-card {
+  transition:
+    transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 40px 80px rgba(15, 34, 27, 0.15);
+  border-color: var(--primary-500);
+}
+
+/* --- Bouton Pulse (Accentuation du CTA) --- */
+.hero-cta .btn-primary {
+  position: relative;
+  overflow: visible;
+}
+
+.hero-cta .btn-primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: var(--primary-500);
+  z-index: -1;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
   }
 }

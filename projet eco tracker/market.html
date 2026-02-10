@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoTracker &middot; Market & Créateur</title>
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="./market.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-row">
+        <button
+          class="theme-toggle"
+          type="button"
+          data-theme-toggle
+          aria-label="Toggle color mode"
+        >
+          Dark mode
+        </button>
+        <div class="user-points-display">
+          <span id="user-points-balance">2450</span> PTS
+        </div>
+      </div>
+      <h1>EcoMarket & Communauté</h1>
+      <p>Échangez vos points contre des outils réels ou passez Premium.</p>
+    </header>
+
+    <main class="page market-page">
+      <section class="card creator-container-pro">
+        <div class="creator-header">
+          <p class="eyebrow">L'Équipe Fondatrice</p>
+          <h2>Bienvenue sur EcoTracker</h2>
+          <p class="creator-quote">
+            "Nous avons uni nos forces pour transformer chaque geste écologique
+            en une récompense concrète. Merci de faire partie du changement."
+          </p>
+        </div>
+
+        <div class="creators-display">
+          <div class="profile-box">
+            <div class="portrait-wrapper">
+              <img
+                src="yahyatof.jpeg"
+                alt="Yahya Cherkani"
+                class="portrait-img"
+              />
+            </div>
+            <h3 class="name-tag">Yahya Cherkani</h3>
+            <p class="role-tag">Founder</p>
+          </div>
+
+          <div class="profile-box">
+            <div class="portrait-wrapper">
+              <img
+                src="aminenaji.jpeg"
+                alt="Co-fondateur"
+                class="portrait-img"
+              />
+            </div>
+            <h3 class="name-tag">Amine Naji</h3>
+            <p class="role-tag">Founder</p>
+          </div>
+        </div>
+      </section>
+      <section class="premium-banner">
+        <div class="premium-content">
+          <h2>Passez à la vitesse supérieure</h2>
+          <p>
+            Débloquez l'IA EcoCoach, doublez vos points et accédez à des outils
+            exclusifs.
+          </p>
+        </div>
+        <div class="premium-action">
+          <p class="price-tag">4.99€ / mois</p>
+          <button class="premium-btn">Devenir Premium</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Les Outils du Changement</h2>
+        <div class="market-grid" id="market-products-container"></div>
+      </section>
+    </main>
+
+    <nav class="navbar">
+      <a href="./dashboard.html">Home</a>
+      <a href="./scan.html">Scan</a>
+      <a href="./market.html" class="active">Market</a>
+      <a href="./profile.html">Profile</a>
+    </nav>
+
+    <script src="./js/theme.js"></script>
+    <script src="./js/market.js"></script>
+  </body>
+</html>
